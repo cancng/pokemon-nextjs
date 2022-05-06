@@ -44,7 +44,6 @@ function Navbar() {
           </Link>
 
           <ActionIcon
-            color={dark ? "yellow" : "lime"}
             onClick={() => toggleColorScheme()}
             title="Toggle color scheme"
             variant="transparent"
