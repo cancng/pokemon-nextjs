@@ -27,7 +27,16 @@ function PokemonCard({ pokemon }: Props) {
 
   return (
     <div>
-      <Card shadow="xs" p="md">
+      <Card
+        shadow="xs"
+        p="md"
+        sx={{
+          transition: "transform ease-in-out 100ms",
+          "&:hover": {
+            transform: "scale(1.07)",
+          },
+        }}
+      >
         {isLoading ? (
           <Skeleton height="300px" />
         ) : (
